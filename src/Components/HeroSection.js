@@ -6,23 +6,25 @@ import HeroImage from '../Images/img-9.png';
 
 
 
-function HeroSection({lightBg,topLine,LightText,LightTextDesc,headline,headline2,headline3,headline4,description,buttonLable,img,alt,imgStart}) {
+
+function HeroSection({topLine,headline,headline2,headline3,headline4,description,buttonLable,imgStart}) {
     return (
         <>
-            <div className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}>
+        
+            <div className="home__hero-section darkBg">
                 <div className ="container">
                     <div className ="row home__hero-row" 
                     style={{display:'flex',flexDirection : imgStart==='start' ? 'row-reverse' : 'row'}}>
                         <div className="col">
                             <div className = "home__hero-text-wrapper">
 
-                                <h1 className={LightText ? 'heading' : 'heading dark'}>{headline}<span className={LightText ? 'heading2' : 'heading dark'} >{headline2}</span>
-                                <span className={LightText ? 'heading' : 'heading dark'} >{headline3}</span><span className={LightText ? 'heading2' : 'heading dark'} >{headline4}</span></h1>
+                                <h1 className="heading">{headline}<span className= "Blue_Heading" >{headline2}</span>
+                                <span className= "heading" >{headline3}</span><span className="Blue_Heading" >{headline4}</span></h1>
                                 
-                                <p className={LightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>{description}</p>
-                                <hr  style={{color: '#ffffff',backgroundColor: '#ffffff',height: .3,borderColor : '#ffffff'}}/>
+                                <p className= "home__hero-subtitle">{description}</p>
+                                <hr/>
                                 <div className="top-line">{topLine}</div>
-                                <Link to='/sign-up'>
+                                <Link to='LogIn'>
                                     <Button buttonSize='btn--wide' buttonColor='blue'>{buttonLable}</Button>
                                 </Link>
                             </div>
@@ -33,6 +35,7 @@ function HeroSection({lightBg,topLine,LightText,LightTextDesc,headline,headline2
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             
