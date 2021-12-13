@@ -1,23 +1,33 @@
 :root{
-    --primary:#6962;
+    --primary:#080A1E;
 }
 
 .btn{
     padding:8px 20px;
-    border-radius: 2px;
-    outline: none;
-    border: none;
+    border-radius: 11px;
+    border-color: #07D0F4;
+    background-color:#080A1E ;
     cursor: pointer;
+    color: #07D0F4;
+    box-sizing: border-box;
+    border:2px solid #07D0F4;
 }
 
+.btn:hover{
+    opacity: 0.6;
+    transition: all 0.3s ease-out;
+}
+
+
+/*
 .btn--primary{
-    background-color: transparent;
-    color: #242424;
-    border: 1px solid var(--primary);
+    background-color:#080A1E ;
+    color: #fff;
+    border: 1px solid #080A1E;
 }
 
 .btn--outline{
-    background-color: #6962;
+    background-color: #080A1E;
     color: #fff;
     padding: 8px 20px;
     border: 1px solid var(--primary);
@@ -40,3 +50,13 @@
     transition: all 0.3s ease-out;
 
 }
+
+.button {
+    border-width: 1;
+    border-radius: 11;
+    padding: 5;
+    padding-top: 40;
+    border-color: '#07D0F4';
+    background-color : '#080A1E';
+    color: '#07D0F4';
+}*/
