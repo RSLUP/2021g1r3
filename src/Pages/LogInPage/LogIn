@@ -1,0 +1,29 @@
+import React from 'react'
+import '../../Components/TwoColorCanvas.css'
+import { homeObjTwo } from '../Data'
+import TwoColorContent from '../../Components/TwoColorContent'
+import FormLogIn from '../../Components/FormLogIn'
+
+
+
+
+
+export default function LogIn() {
+    return (
+        <>
+            <div class="canvas">
+                <div className="Blue-canvas">
+                    <div className="Blue-Canvas-Text">
+                        <TwoColorContent {...homeObjTwo}/>
+                    </div>
+                </div> 
+            
+                <div className="White-canvas">
+                    <div className="White-Canvas-Text">
+                        <FormLogIn/>
+                    </div>
+                </div>   
+            </div>
+        </>
+    )
+};
